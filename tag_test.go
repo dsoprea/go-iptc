@@ -150,7 +150,7 @@ func TestGetSimpleDictionaryFromParsedTags(t *testing.T) {
 		keys := make([]string, len(actual))
 
 		i := 0
-		for k, _ := range actual {
+		for k := range actual {
 			keys[i] = k
 			i++
 		}
@@ -170,7 +170,7 @@ func TestGetSimpleDictionaryFromParsedTags(t *testing.T) {
 		fmt.Printf("\n")
 
 		i = 0
-		for k, _ := range expected {
+		for k := range expected {
 			keys[i] = k
 			i++
 		}
@@ -227,7 +227,7 @@ func TestGetDictionaryFromParsedTags(t *testing.T) {
 		keys := make([]string, len(actual))
 
 		i := 0
-		for k, _ := range actual {
+		for k := range actual {
 			keys[i] = k
 			i++
 		}
@@ -247,7 +247,7 @@ func TestGetDictionaryFromParsedTags(t *testing.T) {
 		fmt.Printf("\n")
 
 		i = 0
-		for k, _ := range expected {
+		for k := range expected {
 			keys[i] = k
 			i++
 		}
